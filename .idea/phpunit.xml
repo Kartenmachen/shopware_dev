@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PHPUnit">
+    <option name="directories">
+      <list>
+        <option value="$PROJECT_DIR$/vendor/shopware/administration" />
+        <option value="$PROJECT_DIR$/vendor/shopware/storefront" />
+        <option value="$PROJECT_DIR$/vendor/shopware/core/Checkout" />
+        <option value="$PROJECT_DIR$/vendor/shopware/core/Content" />
+        <option value="$PROJECT_DIR$/vendor/shopware/core/Framework" />
+        <option value="$PROJECT_DIR$/vendor/shopware/core/Migration" />
+        <option value="$PROJECT_DIR$/vendor/shopware/core/System" />
+        <option value="$PROJECT_DIR$/vendor/shopware/elasticsearch" />
+      </list>
+    </option>
+  </component>
+</project>

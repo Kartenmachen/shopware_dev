@@ -1,0 +1,23 @@
+<?php //%255BShopware%255CCore%255CCheckout%255CCustomer%255CSalesChannel%255CSendPasswordRecoveryMailRoute%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\RouteScope'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\RouteScope')),
+        clone ($p['Shopware\\Core\\Framework\\Routing\\Annotation\\ContextTokenRequired'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\ContextTokenRequired')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\RouteScope' => [
+            'scopes' => [
+                [
+                    'store-api',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

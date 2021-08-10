@@ -1,0 +1,41 @@
+<?php //%255BShopware%255CCore%255CFramework%255CApi%255CController%255CApiController%2523mergeVersion%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.0.0.0',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                1 => '/api/_action/version/merge/{entity}/{versionId}',
+            ],
+            'name' => [
+                1 => 'api.mergeVersion',
+            ],
+            'requirements' => [
+                1 => [
+                    'version' => '\\d+',
+                    'entity' => '[a-zA-Z-]+',
+                    'versionId' => '[0-9a-f]{32}',
+                ],
+            ],
+            'methods' => [
+                1 => [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

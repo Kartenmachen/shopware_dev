@@ -1,0 +1,304 @@
+<?php //%255BShopware%255CCore%255CFramework%255CApi%255CController%255CApiController%2523compositeSearch%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Get')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Items'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Items')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Annotations\\Items'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Response'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Response'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.0.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/_search',
+            ],
+            'tags' => [
+                1 => [
+                    'Admin Api',
+                ],
+            ],
+            'summary' => [
+                1 => 'Search for multiple entites by a given term',
+            ],
+            'operationId' => [
+                1 => 'compositeSearch',
+            ],
+            'parameters' => [
+                1 => [
+                    $o[2],
+                    $o[6],
+                ],
+            ],
+            'responses' => [
+                1 => [
+                    $o[10],
+                    $o[24],
+                    $o[26],
+                ],
+            ],
+            '_context' => [
+                1 => $o[28],
+                $o[5],
+                $o[4],
+                6 => $o[9],
+                $o[8],
+                10 => $o[11],
+                12 => $o[23],
+                $o[22],
+                $o[15],
+                16 => $o[17],
+                18 => $o[21],
+                $o[20],
+                24 => $o[25],
+                26 => $o[27],
+            ],
+            'name' => [
+                2 => 'limit',
+                6 => 'term',
+            ],
+            'in' => [
+                2 => 'query',
+                6 => 'query',
+            ],
+            'description' => [
+                2 => 'Max amount of resources per entity',
+                6 => 'The term to search for',
+                10 => 'The list of found entities',
+                14 => 'The name of the entity',
+                16 => 'The total amount of search results for this entity',
+                18 => 'The found entities',
+            ],
+            'schema' => [
+                2 => $o[3],
+                6 => $o[7],
+            ],
+            'type' => [
+                3 => 'integer',
+                7 => 'string',
+                12 => 'array',
+                'object',
+                'string',
+                16 => 'integer',
+                18 => 'array',
+                'object',
+            ],
+            'filename' => [
+                4 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                8 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                11 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                15 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                17 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                20 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                25 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                27 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                4 => 948,
+                948,
+                8 => 948,
+                948,
+                11 => 948,
+                15 => 948,
+                17 => 948,
+                20 => 948,
+                948,
+                948,
+                948,
+                25 => 948,
+                27 => 948,
+                948,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                'Annotation',
+                8 => 'Annotation',
+                'Annotation',
+                11 => 'Annotation',
+                15 => 'Annotation',
+                17 => 'Annotation',
+                20 => 'Annotation',
+                'Annotation',
+                'Annotation',
+                'Annotation',
+                25 => 'Annotation',
+                27 => 'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                'DocParser',
+                8 => 'DocParser',
+                'DocParser',
+                11 => 'DocParser',
+                15 => 'DocParser',
+                17 => 'DocParser',
+                20 => 'DocParser',
+                'DocParser',
+                'DocParser',
+                'DocParser',
+                25 => 'DocParser',
+                27 => 'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                8 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                11 => 'Doctrine\\Common\\Annotations',
+                15 => 'Doctrine\\Common\\Annotations',
+                17 => 'Doctrine\\Common\\Annotations',
+                20 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                25 => 'Doctrine\\Common\\Annotations',
+                27 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                [
+                    $o[2],
+                ],
+                8 => [
+                    $o[7],
+                ],
+                [
+                    $o[6],
+                ],
+                11 => [
+                    $o[10],
+                ],
+                15 => [
+                    $o[14],
+                ],
+                17 => [
+                    $o[16],
+                ],
+                20 => [
+                    $o[19],
+                ],
+                [
+                    $o[18],
+                ],
+                [
+                    $o[13],
+                ],
+                [
+                    $o[12],
+                ],
+                25 => [
+                    $o[24],
+                ],
+                27 => [
+                    $o[26],
+                ],
+                [
+                    $o[1],
+                ],
+            ],
+            'required' => [
+                6 => true,
+            ],
+            'response' => [
+                10 => '200',
+                24 => '400',
+                26 => '401',
+            ],
+            '_unmerged' => [
+                10 => [
+                    $o[12],
+                ],
+            ],
+            'items' => [
+                12 => $o[13],
+                18 => $o[19],
+            ],
+            'properties' => [
+                13 => [
+                    $o[14],
+                    $o[16],
+                    $o[18],
+                ],
+            ],
+            'property' => [
+                14 => 'entity',
+                16 => 'total',
+                18 => 'entities',
+            ],
+            'additionalProperties' => [
+                19 => true,
+            ],
+            'ref' => [
+                24 => '#/components/responses/400',
+                26 => '#/components/responses/401',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                29 => '/api/_search',
+            ],
+            'name' => [
+                29 => 'api.composite.search',
+            ],
+            'requirements' => [
+                29 => [
+                    'version' => '\\d+',
+                ],
+            ],
+            'methods' => [
+                29 => [
+                    'GET',
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[29],
+    ],
+    []
+); }];

@@ -1,0 +1,232 @@
+<?php //%255BShopware%255CCore%255CCheckout%255CCustomer%255CSalesChannel%255CSwitchDefaultAddressRoute%2523swap%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Patch'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Patch')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Patch'],
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Response'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Shopware\\Core\\Framework\\Routing\\Annotation\\LoginRequired'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\LoginRequired')),
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        clone $p['Symfony\\Component\\Routing\\Annotation\\Route'],
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.3.2.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/account/address/default-shipping/{addressId}',
+                9 => '/account/address/default-billing/{addressId}',
+            ],
+            'tags' => [
+                1 => [
+                    'Store API',
+                    'Account',
+                    'Address',
+                ],
+                9 => [
+                    'Store API',
+                    'Account',
+                    'Address',
+                ],
+            ],
+            'summary' => [
+                1 => 'Sets the default shipping address',
+                9 => 'Sets the default billing address',
+            ],
+            'operationId' => [
+                1 => 'defaultShippingAddress',
+                9 => 'defaultBillingAddress',
+            ],
+            'parameters' => [
+                1 => [
+                    $o[2],
+                ],
+                9 => [
+                    $o[10],
+                ],
+            ],
+            'responses' => [
+                1 => [
+                    $o[6],
+                ],
+                9 => [
+                    $o[14],
+                ],
+            ],
+            '_context' => [
+                1 => $o[8],
+                $o[5],
+                $o[4],
+                6 => $o[7],
+                9 => $o[16],
+                $o[13],
+                $o[12],
+                14 => $o[15],
+            ],
+            'name' => [
+                2 => 'addressId',
+                10 => 'addressId',
+            ],
+            'in' => [
+                2 => 'path',
+                10 => 'path',
+            ],
+            'description' => [
+                2 => 'Address ID',
+                6 => '',
+                10 => 'Address ID',
+                14 => '',
+            ],
+            'required' => [
+                2 => true,
+                10 => true,
+            ],
+            'schema' => [
+                2 => $o[3],
+                10 => $o[11],
+            ],
+            'type' => [
+                3 => 'string',
+                11 => 'string',
+            ],
+            'filename' => [
+                4 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                7 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                12 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                15 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                4 => 948,
+                948,
+                7 => 948,
+                948,
+                12 => 948,
+                948,
+                15 => 948,
+                948,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                'Annotation',
+                7 => 'Annotation',
+                'Annotation',
+                12 => 'Annotation',
+                'Annotation',
+                15 => 'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                'DocParser',
+                7 => 'DocParser',
+                'DocParser',
+                12 => 'DocParser',
+                'DocParser',
+                15 => 'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                7 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                12 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                15 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                [
+                    $o[2],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                [
+                    $o[1],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                [
+                    $o[10],
+                ],
+                15 => [
+                    $o[14],
+                ],
+                [
+                    $o[9],
+                ],
+            ],
+            'response' => [
+                6 => '200',
+                14 => '200',
+            ],
+        ],
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\LoginRequired' => [
+            'allowGuest' => [
+                17 => false,
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                18 => '/store-api/account/address/default-shipping/{addressId}',
+                '/store-api/account/address/default-billing/{addressId}',
+            ],
+            'name' => [
+                18 => 'store-api.account.address.change.default.shipping',
+                'store-api.account.address.change.default.billing',
+            ],
+            'defaults' => [
+                18 => [
+                    'type' => 'shipping',
+                ],
+                [
+                    'type' => 'billing',
+                ],
+            ],
+            'methods' => [
+                18 => [
+                    'PATCH',
+                ],
+                [
+                    'PATCH',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[9],
+        $o[17],
+        $o[18],
+        $o[19],
+    ],
+    []
+); }];

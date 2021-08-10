@@ -1,0 +1,217 @@
+<?php //%255BShopware%255CCore%255CContent%255CLandingPage%255CSalesChannel%255CCachedLandingPageRoute%2523load%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Response'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.4.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/landing-page/{landingPageId}',
+            ],
+            'tags' => [
+                1 => [
+                    'Store API',
+                    'Content',
+                ],
+            ],
+            'summary' => [
+                1 => 'Loads a landing page with the resolved cms page',
+            ],
+            'operationId' => [
+                1 => 'readLandingPage',
+            ],
+            'parameters' => [
+                1 => [
+                    $o[2],
+                    $o[4],
+                    $o[8],
+                ],
+            ],
+            'responses' => [
+                1 => [
+                    $o[12],
+                    $o[16],
+                ],
+            ],
+            '_context' => [
+                1 => $o[18],
+                $o[3],
+                4 => $o[7],
+                $o[6],
+                8 => $o[11],
+                $o[10],
+                12 => $o[13],
+                14 => $o[15],
+                16 => $o[17],
+            ],
+            'name' => [
+                2 => 'Api-Basic-Parameters',
+                4 => 'landingPageId',
+                8 => 'slots',
+            ],
+            'filename' => [
+                3 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                6 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                10 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                13 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                15 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                17 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                3 => 948,
+                6 => 948,
+                948,
+                10 => 948,
+                948,
+                13 => 948,
+                15 => 948,
+                17 => 948,
+                948,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                6 => 'Annotation',
+                'Annotation',
+                10 => 'Annotation',
+                'Annotation',
+                13 => 'Annotation',
+                15 => 'Annotation',
+                17 => 'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                6 => 'DocParser',
+                'DocParser',
+                10 => 'DocParser',
+                'DocParser',
+                13 => 'DocParser',
+                15 => 'DocParser',
+                17 => 'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Doctrine\\Common\\Annotations',
+                6 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                10 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                13 => 'Doctrine\\Common\\Annotations',
+                15 => 'Doctrine\\Common\\Annotations',
+                17 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                6 => [
+                    $o[5],
+                ],
+                [
+                    $o[4],
+                ],
+                10 => [
+                    $o[9],
+                ],
+                [
+                    $o[8],
+                ],
+                13 => [
+                    $o[12],
+                ],
+                15 => [
+                    $o[14],
+                ],
+                17 => [
+                    $o[16],
+                ],
+                [
+                    $o[1],
+                ],
+            ],
+            'in' => [
+                4 => 'path',
+                8 => 'query',
+            ],
+            'description' => [
+                4 => 'LandingPage ID',
+                8 => 'Slots of the resolved cms page',
+                12 => 'The loaded landing page with cms page',
+            ],
+            'required' => [
+                4 => true,
+                8 => false,
+            ],
+            'schema' => [
+                4 => $o[5],
+                8 => $o[9],
+            ],
+            'type' => [
+                5 => 'string',
+                9 => 'string',
+            ],
+            'response' => [
+                12 => '200',
+                16 => '404',
+            ],
+            '_unmerged' => [
+                12 => [
+                    $o[14],
+                ],
+            ],
+            'ref' => [
+                14 => '#/components/schemas/landing_page_flat',
+                16 => '#/components/responses/404',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                19 => '/store-api/landing-page/{landingPageId}',
+            ],
+            'name' => [
+                19 => 'store-api.landing-page.detail',
+            ],
+            'methods' => [
+                19 => [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[19],
+    ],
+    []
+); }];

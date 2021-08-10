@@ -1,0 +1,287 @@
+<?php //%255BShopware%255CCore%255CSystem%255CSalesChannel%255CSalesChannel%255CContextSwitchRoute%2523switchContext%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Patch'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Patch')),
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.2.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/context',
+            ],
+            'tags' => [
+                1 => [
+                    'Store API',
+                    'Context',
+                ],
+            ],
+            'summary' => [
+                1 => 'Update the context',
+            ],
+            'operationId' => [
+                1 => 'updateContext',
+            ],
+            'requestBody' => [
+                1 => $o[2],
+            ],
+            'responses' => [
+                1 => [
+                    $o[22],
+                ],
+            ],
+            '_context' => [
+                1 => $o[26],
+                $o[3],
+                4 => $o[21],
+                $o[6],
+                7 => $o[8],
+                9 => $o[10],
+                11 => $o[12],
+                13 => $o[14],
+                15 => $o[16],
+                17 => $o[18],
+                19 => $o[20],
+                22 => $o[23],
+                24 => $o[25],
+            ],
+            'required' => [
+                2 => true,
+            ],
+            '_unmerged' => [
+                2 => [
+                    $o[4],
+                ],
+                22 => [
+                    $o[24],
+                ],
+            ],
+            'filename' => [
+                3 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                6 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                8 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                10 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                12 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                14 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                16 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                18 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                20 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                23 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                25 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                3 => 948,
+                6 => 948,
+                8 => 948,
+                10 => 948,
+                12 => 948,
+                14 => 948,
+                16 => 948,
+                18 => 948,
+                20 => 948,
+                948,
+                23 => 948,
+                25 => 948,
+                948,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                6 => 'Annotation',
+                8 => 'Annotation',
+                10 => 'Annotation',
+                12 => 'Annotation',
+                14 => 'Annotation',
+                16 => 'Annotation',
+                18 => 'Annotation',
+                20 => 'Annotation',
+                'Annotation',
+                23 => 'Annotation',
+                25 => 'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                6 => 'DocParser',
+                8 => 'DocParser',
+                10 => 'DocParser',
+                12 => 'DocParser',
+                14 => 'DocParser',
+                16 => 'DocParser',
+                18 => 'DocParser',
+                20 => 'DocParser',
+                'DocParser',
+                23 => 'DocParser',
+                25 => 'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Doctrine\\Common\\Annotations',
+                6 => 'Doctrine\\Common\\Annotations',
+                8 => 'Doctrine\\Common\\Annotations',
+                10 => 'Doctrine\\Common\\Annotations',
+                12 => 'Doctrine\\Common\\Annotations',
+                14 => 'Doctrine\\Common\\Annotations',
+                16 => 'Doctrine\\Common\\Annotations',
+                18 => 'Doctrine\\Common\\Annotations',
+                20 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                23 => 'Doctrine\\Common\\Annotations',
+                25 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                6 => [
+                    $o[5],
+                ],
+                8 => [
+                    $o[7],
+                ],
+                10 => [
+                    $o[9],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                14 => [
+                    $o[13],
+                ],
+                16 => [
+                    $o[15],
+                ],
+                18 => [
+                    $o[17],
+                ],
+                20 => [
+                    $o[19],
+                ],
+                [
+                    $o[4],
+                ],
+                23 => [
+                    $o[22],
+                ],
+                25 => [
+                    $o[24],
+                ],
+                [
+                    $o[1],
+                ],
+            ],
+            'properties' => [
+                4 => [
+                    $o[5],
+                    $o[7],
+                    $o[9],
+                    $o[11],
+                    $o[13],
+                    $o[15],
+                    $o[17],
+                    $o[19],
+                ],
+            ],
+            'property' => [
+                5 => 'currencyId',
+                7 => 'languageId',
+                9 => 'billingAddressId',
+                11 => 'shippingAddressId',
+                13 => 'paymentMethodId',
+                15 => 'shippingMethodId',
+                17 => 'countryId',
+                19 => 'countryStateId',
+            ],
+            'description' => [
+                5 => 'Currency',
+                7 => 'Language',
+                9 => 'Billing Address',
+                11 => 'Shipping Address',
+                13 => 'Payment Method',
+                15 => 'Shipping Method',
+                17 => 'Country',
+                19 => 'Country State',
+                22 => 'Context',
+            ],
+            'type' => [
+                5 => 'string',
+                7 => 'string',
+                9 => 'string',
+                11 => 'string',
+                13 => 'string',
+                15 => 'string',
+                17 => 'string',
+                19 => 'string',
+            ],
+            'format' => [
+                5 => 'uuid',
+                7 => 'uuid',
+                9 => 'uuid',
+                11 => 'uuid',
+                13 => 'uuid',
+                15 => 'uuid',
+                17 => 'uuid',
+                19 => 'uuid',
+            ],
+            'response' => [
+                22 => '200',
+            ],
+            'ref' => [
+                24 => '#/components/schemas/ContextTokenResponse',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                27 => '/store-api/context',
+            ],
+            'name' => [
+                27 => 'store-api.switch-context',
+            ],
+            'methods' => [
+                27 => [
+                    'PATCH',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[27],
+    ],
+    []
+); }];

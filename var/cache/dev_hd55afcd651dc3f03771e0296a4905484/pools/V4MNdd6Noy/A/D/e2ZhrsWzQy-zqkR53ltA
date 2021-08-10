@@ -1,0 +1,168 @@
+<?php //%255BShopware%255CCore%255CContent%255CProduct%255CSalesChannel%255CListing%255CCachedProductListingRoute%2523load%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['Shopware\\Core\\Framework\\Routing\\Annotation\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Entity')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.2.0.0',
+            ],
+        ],
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Entity' => [
+            'value' => [
+                1 => 'product',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                2 => '/product-listing/{categoryId}',
+            ],
+            'tags' => [
+                2 => [
+                    'Store API',
+                    'Product',
+                ],
+            ],
+            'summary' => [
+                2 => 'Loads products from listing',
+            ],
+            'operationId' => [
+                2 => 'readProductListing',
+            ],
+            'parameters' => [
+                2 => [
+                    $o[3],
+                ],
+            ],
+            'responses' => [
+                2 => [
+                    $o[7],
+                ],
+            ],
+            '_context' => [
+                2 => $o[11],
+                $o[6],
+                $o[5],
+                7 => $o[8],
+                9 => $o[10],
+            ],
+            'name' => [
+                3 => 'categoryId',
+            ],
+            'in' => [
+                3 => 'path',
+            ],
+            'description' => [
+                3 => 'Category ID',
+                7 => 'Found products',
+            ],
+            'required' => [
+                3 => true,
+            ],
+            'schema' => [
+                3 => $o[4],
+            ],
+            'type' => [
+                4 => 'string',
+            ],
+            'filename' => [
+                5 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                8 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                10 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                5 => 948,
+                948,
+                8 => 948,
+                10 => 948,
+                948,
+            ],
+            'method' => [
+                5 => 'Annotation',
+                'Annotation',
+                8 => 'Annotation',
+                10 => 'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                5 => 'DocParser',
+                'DocParser',
+                8 => 'DocParser',
+                10 => 'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                5 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                8 => 'Doctrine\\Common\\Annotations',
+                10 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                5 => [
+                    $o[4],
+                ],
+                [
+                    $o[3],
+                ],
+                8 => [
+                    $o[7],
+                ],
+                10 => [
+                    $o[9],
+                ],
+                [
+                    $o[2],
+                ],
+            ],
+            'response' => [
+                7 => '200',
+            ],
+            '_unmerged' => [
+                7 => [
+                    $o[9],
+                ],
+            ],
+            'ref' => [
+                9 => '#/components/schemas/ProductListingResult',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                12 => '/store-api/product-listing/{categoryId}',
+            ],
+            'name' => [
+                12 => 'store-api.product.listing',
+            ],
+            'methods' => [
+                12 => [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[12],
+    ],
+    []
+); }];

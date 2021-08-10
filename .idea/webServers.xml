@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7557ef82-1924-4c3e-a157-0c3eb6635d35" name="ResheimLocal" url="http://localhost">
+        <fileTransfer rootFolder="/var/www/html" accessType="SFTP" host="localhost" port="22" sshConfigId="cb787e52-82db-43b8-a254-a6279ada00b2" sshConfig="ResheimSandbox">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

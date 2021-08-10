@@ -1,0 +1,51 @@
+<?php //%255BShopware%255CStorefront%255CController%255CCmsController%2523switchBuyBoxVariant%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['Shopware\\Storefront\\Framework\\Cache\\Annotation\\HttpCache'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Storefront\\Framework\\Cache\\Annotation\\HttpCache')),
+        clone ($p['Shopware\\Core\\Framework\\Routing\\Annotation\\RouteScope'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\RouteScope')),
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.4.0.0',
+            ],
+        ],
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\RouteScope' => [
+            'scopes' => [
+                2 => [
+                    'storefront',
+                ],
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                3 => '/widgets/cms/buybox/{productId}/switch',
+            ],
+            'name' => [
+                3 => 'frontend.cms.buybox.switch',
+            ],
+            'defaults' => [
+                3 => [
+                    'productId' => null,
+                    'XmlHttpRequest' => true,
+                ],
+            ],
+            'methods' => [
+                3 => [
+                    'GET',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[3],
+    ],
+    []
+); }];

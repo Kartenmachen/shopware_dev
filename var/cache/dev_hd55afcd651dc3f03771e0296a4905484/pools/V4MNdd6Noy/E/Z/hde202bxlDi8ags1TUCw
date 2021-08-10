@@ -1,0 +1,261 @@
+<?php //%255BShopware%255CCore%255CContent%255CCategory%255CSalesChannel%255CCachedNavigationRoute%2523load%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['Shopware\\Core\\Framework\\Routing\\Annotation\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Entity')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.2.0.0',
+            ],
+        ],
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Entity' => [
+            'value' => [
+                1 => 'category',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                2 => '/navigation/{requestActiveId}/{requestRootId}',
+            ],
+            'tags' => [
+                2 => [
+                    'Store API',
+                    'Navigation',
+                ],
+            ],
+            'summary' => [
+                2 => 'Loads all available navigations',
+            ],
+            'operationId' => [
+                2 => 'readNavigation',
+            ],
+            'parameters' => [
+                2 => [
+                    $o[3],
+                    $o[5],
+                    $o[9],
+                ],
+            ],
+            'requestBody' => [
+                2 => $o[13],
+            ],
+            'responses' => [
+                2 => [
+                    $o[19],
+                ],
+            ],
+            '_context' => [
+                2 => $o[23],
+                $o[4],
+                5 => $o[8],
+                $o[7],
+                9 => $o[12],
+                $o[11],
+                13 => $o[14],
+                15 => $o[18],
+                $o[17],
+                19 => $o[20],
+                21 => $o[22],
+            ],
+            'name' => [
+                3 => 'Api-Basic-Parameters',
+                5 => 'requestActiveId',
+                9 => 'requestRootId',
+            ],
+            'filename' => [
+                4 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                7 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                11 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                14 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                17 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                20 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                22 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                4 => 948,
+                7 => 948,
+                948,
+                11 => 948,
+                948,
+                14 => 948,
+                17 => 948,
+                948,
+                20 => 948,
+                22 => 948,
+                948,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                7 => 'Annotation',
+                'Annotation',
+                11 => 'Annotation',
+                'Annotation',
+                14 => 'Annotation',
+                17 => 'Annotation',
+                'Annotation',
+                20 => 'Annotation',
+                22 => 'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                7 => 'DocParser',
+                'DocParser',
+                11 => 'DocParser',
+                'DocParser',
+                14 => 'DocParser',
+                17 => 'DocParser',
+                'DocParser',
+                20 => 'DocParser',
+                22 => 'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Doctrine\\Common\\Annotations',
+                7 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                11 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                14 => 'Doctrine\\Common\\Annotations',
+                17 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                20 => 'Doctrine\\Common\\Annotations',
+                22 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                [
+                    $o[5],
+                ],
+                11 => [
+                    $o[10],
+                ],
+                [
+                    $o[9],
+                ],
+                14 => [
+                    $o[13],
+                ],
+                17 => [
+                    $o[16],
+                ],
+                [
+                    $o[15],
+                ],
+                20 => [
+                    $o[19],
+                ],
+                22 => [
+                    $o[21],
+                ],
+                [
+                    $o[2],
+                ],
+            ],
+            'in' => [
+                5 => 'path',
+                9 => 'path',
+            ],
+            'description' => [
+                5 => 'Active Category ID',
+                9 => 'Root Category ID',
+                16 => 'Build category tree',
+                19 => 'All available navigations',
+            ],
+            'required' => [
+                5 => true,
+                9 => true,
+                13 => true,
+            ],
+            'schema' => [
+                5 => $o[6],
+                9 => $o[10],
+            ],
+            'type' => [
+                6 => 'string',
+                10 => 'string',
+                16 => 'boolean',
+            ],
+            '_unmerged' => [
+                13 => [
+                    $o[15],
+                ],
+                19 => [
+                    $o[21],
+                ],
+            ],
+            'properties' => [
+                15 => [
+                    $o[16],
+                ],
+            ],
+            'property' => [
+                16 => 'buildTree',
+            ],
+            'response' => [
+                19 => '200',
+            ],
+            'ref' => [
+                21 => '#/components/schemas/NavigationRouteResponse',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                24 => '/store-api/navigation/{activeId}/{rootId}',
+            ],
+            'name' => [
+                24 => 'store-api.navigation',
+            ],
+            'methods' => [
+                24 => [
+                    'GET',
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[24],
+    ],
+    []
+); }];
