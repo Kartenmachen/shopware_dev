@@ -1,0 +1,25 @@
+{
+  "sw-settings-basic-information": {
+    "general": {
+      "mainMenuItemGeneral": "Basic information",
+      "description": "Change basic information here.",
+      "textHeadline": "Basic information",
+      "buttonSave": "Save",
+      "messageSaveSuccess": "Configuration has been saved."
+    },
+    "captcha": {
+      "label": {
+        "honeypot": "Honeypot CAPTCHA",
+        "basicCaptcha": "Basic Captcha",
+        "googleReCaptchaV2": "Google reCAPTCHA v2",
+        "googleReCaptchaV2SiteKey": "Google reCAPTCHA v2 site key",
+        "googleReCaptchaV2SecretKey": "Google reCAPTCHA v2 secret key",
+        "googleReCaptchaV2Invisible": "Google reCAPTCHA v2 invisible",
+        "googleReCaptchaV3": "Google reCAPTCHA v3",
+        "googleReCaptchaV3SiteKey": "Google reCAPTCHA v3 site key",
+        "googleReCaptchaV3SecretKey": "Google reCAPTCHA v3 secret key",
+        "googleReCaptchaV3ThresholdScore": "Google reCAPTCHA v3 threshold score"
+      }
+    }
+  }
+}

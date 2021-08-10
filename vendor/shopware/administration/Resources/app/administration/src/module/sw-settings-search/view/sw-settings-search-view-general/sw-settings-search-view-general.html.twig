@@ -1,0 +1,25 @@
+{% block sw_settings_search_view_general %}
+    <div class="sw-settings-search__view-general">
+        {% block sw_settings_search_search_behaviour_card %}
+            <sw-settings-search-search-behaviour
+                :isLoading="isLoading"
+                :searchBehaviourConfigs="productSearchConfigs">
+            </sw-settings-search-search-behaviour>
+        {% endblock %}
+
+        {% block sw_settings_search_searchable_content_card %}
+            <sw-settings-search-searchable-content
+                :productSearchConfigs="productSearchConfigs"
+                :searchConfigId="searchConfigId">
+            </sw-settings-search-searchable-content>
+        {% endblock %}
+
+        {% block sw_settings_search_excluded_search_terms_card %}
+            <sw-settings-search-excluded-search-terms
+                :searchConfigs="productSearchConfigs"
+                :isExcludedTermsLoading="isLoading"
+                @data-load="loadData">
+            </sw-settings-search-excluded-search-terms>
+        {% endblock %}
+    </div>
+{% endblock %}

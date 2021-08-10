@@ -1,0 +1,70 @@
+{
+  "sw-settings-country": {
+    "general": {
+      "mainMenuItemGeneral": "Länder",
+      "placeholderSearchBar": "Durchsuche alle Länder ..."
+    },
+    "list": {
+      "textHeadline": "Länder",
+      "textDeleteConfirm": "Bist Du sicher, dass Du dieses Land \"{name}\" löschen möchtest?",
+      "columnName": "Name",
+      "columnPosition": "Position",
+      "columnIso": "ISO",
+      "columnIso3": "ISO3",
+      "columnActive": "Aktiv",
+      "buttonAddCountry": "Land anlegen",
+      "contextMenuEdit": "Bearbeiten",
+      "contextMenuDelete": "Löschen",
+      "messageDeleteSuccess": "Das Land \"{name}\" wurde erfolgreich gelöscht.",
+      "buttonCancel": "Abbrechen",
+      "buttonDelete": "Löschen"
+    },
+    "detail": {
+      "textHeadline": "Neues Land",
+      "titleCard": "Einstellungen",
+      "messageSaveSuccess": "Das Land \"{name}\" wurde erfolgreich gespeichert.",
+      "messageSaveError": "Das Land \"{name}\" konnte nicht gespeichert werden.",
+      "labelName": "Name",
+      "labelPosition": "Position",
+      "labelIso": "ISO",
+      "labelIso3": "ISO3",
+      "labelActive": "Aktiv",
+      "labelShippingAvailable": "Versand verfügbar",
+      "labelTaxFree": "Steuerfrei",
+      "labelCompanyTaxFree": "Steuerfrei für Unternehmen",
+      "labelCheckVatIdFormat": "USt-ID-Format überprüfen",
+      "helpTextCheckVatIdFormat": "Erlaubt eine Formatprüfung der USt-Id für alle Mitgliedsstaaten der EU.",
+      "labelForceStateInRegistration": "Bundesland bei Registrierung erforderlich",
+      "placeholderName": "Namen eingeben ...",
+      "placeholderPosition": "1",
+      "placeholderIso": "ISO-Code eingeben ...",
+      "placeholderIso3": "Dreistelligen ISO-Code eingeben ...",
+      "buttonCancel": "Abbrechen",
+      "buttonSave": "Speichern",
+      "buttonAddCountryState": "Bundesland hinzufügen",
+      "editAction": "Editieren",
+      "columnStateNameLabel": "Name",
+      "columnStateShortCodeLabel": "Kürzel",
+      "taxFreeFrom": "Steuerfrei ab",
+      "taxFreeFromHelpText": "Wenn die Gesamtsumme des Warenkorbs größer ist als der Wert in \"Steuerfrei ab\", ist der gesamte Warenkorb steuerfrei.",
+      "labelVatIdRequired": "Umsatzsteuer-ID als Pflichtfeld behandeln"
+    }
+  },
+  "sw-country-state-detail": {
+    "titleNew": "Neues Bundesland",
+    "titleEdit": "Bundesland bearbeiten",
+    "buttonSave": "Speichern",
+    "buttonCancel": "Abbrechen",
+    "labelName": "Name",
+    "labelPosition": "Position",
+    "labelShortCode": "ISO-Code",
+    "tooltipPosition": "Steuert die Position des Bundeslandes bei der Ausgabe in Listen usw."
+  },
+  "sw-privileges": {
+    "permissions": {
+      "country": {
+        "label": "Länder"
+      }
+    }
+  }
+}

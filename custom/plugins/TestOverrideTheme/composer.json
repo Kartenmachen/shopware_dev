@@ -1,0 +1,18 @@
+{
+  "name": "swag/theme-skeleton",
+  "description": "Theme skeleton plugin",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "TestOverrideTheme\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "TestOverrideTheme\\TestOverrideTheme",
+    "label": {
+      "de-DE": "Theme TestOverrideTheme plugin",
+      "en-GB": "Theme TestOverrideTheme plugin"
+    }
+  }
+}

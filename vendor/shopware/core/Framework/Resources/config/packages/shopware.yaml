@@ -1,0 +1,166 @@
+parameters:
+    default_cdn_strategy: "id"
+    env(APP_URL): ''
+    APP_URL: "%env(string:APP_URL)%"
+
+shopware:
+    filesystem:
+        private:
+            type: "local"
+            config:
+                root: "%kernel.project_dir%/files"
+        public:
+            type: "local"
+            config:
+                root: "%kernel.project_dir%/public"
+        temp:
+            type: "local"
+            config:
+                root: "%kernel.project_dir%/var"
+        theme:
+        asset:
+        sitemap:
+        allowed_extensions: ["jpg", "jpeg", "png", "webp", "gif", "svg", "bmp", "tiff", "tif", "eps", "webm", "mkv", "flv", "ogv", "ogg", "mov", "mp4", "avi", "wmv", "pdf", "aac", "mp3", "wav", "flac", "oga", "wma", "txt", "doc", "ico"]
+
+    cdn:
+        url: ''
+        strategy: "%env(string:default:default_cdn_strategy:SHOPWARE_CDN_STRATEGY_DEFAULT)%"
+
+    api:
+        max_limit: 500
+        api_browser:
+            auth_required: true
+        store:
+            context_lifetime: 'P1D' # 1 day interval, see also https://www.php.net/manual/en/dateinterval.construct.php#refsect1-dateinterval.construct-parameters
+    admin_worker:
+        enable_admin_worker: true
+        # This has to be lower than PHP's max_execution_time (default: 30s)
+        poll_interval: 20
+        transports: ["default"]
+
+    auto_update:
+        enabled: true
+
+    store:
+        frw: false
+
+    sitemap:
+        batchsize: 100
+        custom_urls:
+        excluded_urls:
+
+    deployment:
+        blue_green: '%env(bool:default:defaults_bool_true:BLUE_GREEN_DEPLOYMENT)%'
+
+    media:
+        enable_url_upload_feature: true
+        enable_url_validation: true
+
+    dal:
+        batch_size: 125
+        versioning:
+            expire_days: 30
+
+    cart:
+        expire_days: 120
+
+    feature:
+        flags:
+            - name: FEATURE_NEXT_1797
+              default: false
+              major: true
+              description: "composer require for plugins"
+            - name: FEATURE_NEXT_11917
+              major: false
+              description: "dynamic plugin acl privileges"
+            - name: FEATURE_NEXT_12608
+              default: true
+              major: true
+              description: "App System Store"
+              # issue: NEXT-13469
+              # issue: NEXT-13759
+            - name: FEATURE_NEXT_13810
+              default: false
+              major: true
+              description: "Deprecate old promotion module"
+              # issue: NEXT-13810
+            - name: FEATURE_NEXT_6544
+              default: false
+              major: false
+              description: "Image assignment for variants"
+              # issue: NEXT-6544
+            - name: FEATURE_NEXT_14872
+              default: false
+              major: false
+              description: "Search of FkField PrimaryKey"
+              # issue: NEXT-14872
+            - name: FEATURE_NEXT_15053
+              default: false
+              major: false
+              description: "Replace wrong displayed characters in number format"
+              # issue: NEXT-15053
+            - name: FEATURE_NEXT_14114
+              default: false
+              major: false
+              description: "Brexit Changes"
+              # issue: NEXT-14114
+            - name: FEATURE_NEXT_12455
+              default: false
+              major: false
+              description: "Captcha Integration"
+              # issue: NEXT-12455
+            - name: FEATURE_NEXT_12635
+              default: false
+              major: false
+              description: "Improve nested LineItem support"
+              # issue: NEXT-12635
+            - name: FEATURE_NEXT_14363
+              default: false
+              major: false
+              description: "App System 3.0 - Dispatch webhook overqueue"
+              # issue: NEXT-14363
+            - name: FEATURE_NEXT_8225
+              default: false
+              major: false
+              description: "Flow builder"
+              # issue: NEXT-8225
+            - name: FEATURE_NEXT_6061
+              default: false
+              major: false
+              description: "Bulk Edit for Orders and Products"
+              # issue: NEXT-6061
+            - name: FEATURE_NEXT_14408
+              default: false
+              major: false
+              description: "App System 3.0 - CMS blocks provided by apps"
+              # issue: NEXT-14408
+            - name: FEATURE_NEXT_12437
+              default: false
+              major: false
+              description: "Improve Product UX 2.0"
+              # issue: NEXT-12437
+
+    logger:
+        file_rotation_count: 14
+
+    cache:
+        invalidation:
+            delay: 0
+            count: 150
+            http_cache: ['logged-in', 'cart-filled']
+            product_listing_route: []
+            product_detail_route: []
+            product_review_route: []
+            product_search_route: [ ]
+            product_suggest_route: [ ]
+            product_cross_selling_route: [ ]
+            payment_method_route: []
+            shipping_method_route: []
+            navigation_route: []
+            category_route: []
+            landing_page_route: []
+            language_route: []
+            currency_route: []
+            country_route: []
+            salutation_route: []
+            sitemap_route: []

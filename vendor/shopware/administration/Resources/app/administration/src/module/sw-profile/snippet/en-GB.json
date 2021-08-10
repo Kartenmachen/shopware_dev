@@ -1,0 +1,45 @@
+{
+  "sw-profile": {
+    "general": {
+      "mainMenuItemGeneral": "Profiles",
+      "description": "Manage your profile here.",
+      "headlineProfile": "Your profile"
+    },
+    "index": {
+      "buttonSaveLabel": "Save",
+      "titleInfoCard": "Profile information",
+      "titleImageCard": "Profile image",
+      "titlePasswordCard": "Password",
+      "labelFirstNameField": "First name",
+      "labelLastNameField": "Last name",
+      "labelUsernameField": "Username",
+      "labelEmailField": "Email address",
+      "labelOldPassword": "Old password",
+      "placeholderOldPassword": "Enter old password...",
+      "labelNewPassword": "New password",
+      "placeholderNewPassword": "Enter new password...",
+      "labelNewPasswordConfirm": "Confirm password",
+      "placeholderNewPasswordConfirm": "Re-enter new password...",
+      "notificationPasswordErrorMessage": "The submitted passwords do not match.",
+      "notificationOldPasswordErrorMessage": "Please submit your current password correctly.",
+      "notificationNewPasswordIsSameAsOldErrorMessage": "The new password is identical with your old one. Please choose a new password.",
+      "notificationInvalidEmailErrorMessage": "Please enter a valid email address.",
+      "notificationSaveSuccessMessage": "Profile information have been saved.",
+      "notificationSaveErrorMessage": "Profile information could not be saved.",
+      "labelUploadAvatar": "Upload avatar",
+      "labelUseAsAvatar": "Use as avatar",
+      "titleConfirmPasswordModal": "Enter your current password to confirm",
+      "labelConfirmPassword": "Password",
+      "placeholderConfirmPassword": "Please enter your current password.",
+      "labelButtonCancel": "Cancel",
+      "labelButtonConfirm": "Confirm"
+    }
+  },
+  "sw-privileges": {
+    "additional_permissions": {
+      "user": {
+        "update_profile": "Update own profile"
+      }
+    }
+  }
+}

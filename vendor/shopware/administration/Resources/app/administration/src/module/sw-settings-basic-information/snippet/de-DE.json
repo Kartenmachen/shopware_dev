@@ -1,0 +1,25 @@
+{
+  "sw-settings-basic-information": {
+    "general": {
+      "mainMenuItemGeneral": "Stammdaten",
+      "description": "Hier können Einstellungen an den Stammdaten vorgenommen werden.",
+      "textHeadline": "Stammdaten",
+      "buttonSave": "Speichern",
+      "messageSaveSuccess": "Die Konfiguration wurde erfolgreich gespeichert."
+    },
+    "captcha": {
+      "label": {
+        "honeypot": "Honeypot Captcha",
+        "basicCaptcha": "Einfaches CAPTCHA",
+        "googleReCaptchaV2": "Google reCAPTCHA v2",
+        "googleReCaptchaV2SiteKey": "Website-Schlüssel für Google reCAPTCHA v2",
+        "googleReCaptchaV2SecretKey": "Geheimer Schlüssel für Google reCAPTCHA v2",
+        "googleReCaptchaV2Invisible": "Google reCAPTCHA v2 unsichtbar",
+        "googleReCaptchaV3": "Google reCAPTCHA v3",
+        "googleReCaptchaV3SiteKey": "Google reCAPTCHA v3 Websiteschlüssel",
+        "googleReCaptchaV3SecretKey": "Google reCAPTCHA v3 geheimer Schlüssel",
+        "googleReCaptchaV3ThresholdScore": "Google reCAPTCHA v3 Grenzwertpunktzahl"
+      }
+    }
+  }
+}

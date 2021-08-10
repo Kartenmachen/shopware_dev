@@ -1,0 +1,19 @@
+{% block component_hidden_line_items_information %}
+    <div class="d-none hidden-line-items-information">
+        {% for lineItem in lineItems  %}
+            {% if lineItem.priceDefinition.price %}
+              {% set gaPrice = lineItem.priceDefinition.price %}
+            {% else %}
+              {% set gaPrice = lineItem.price.totalPrice %}
+            {% endif %}
+            {% block component_hidden_line_item_information %}
+                <span class="hidden-line-item"
+                      data-id="{{ lineItem.id }}"
+                      data-name="{{ lineItem.label }}"
+                      data-quantity="{{ lineItem.quantity }}"
+                      data-price="{{ gaPrice }}">
+                </span>
+            {% endblock %}
+        {% endfor %}
+    </div>
+{% endblock %}

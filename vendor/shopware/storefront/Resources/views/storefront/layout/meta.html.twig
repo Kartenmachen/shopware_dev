@@ -1,0 +1,135 @@
+{% block layout_head_inner %}
+    {% set metaInformation = page.metaInformation %}
+    {% set basicConfig = config('core.basicInformation') %}
+    {% set maxLength = config('seo.descriptionMaxLength') %}
+    {% set metaDescription = metaInformation.metaDescription|striptags|trim|u.truncate(maxLength ?? 160, '…') %}
+    {% set metaTitle = metaInformation.metaTitle|striptags|trim %}
+    {% set metaKeywords = metaInformation.metaKeywords|striptags|trim %}
+
+    <head>
+        {% block layout_head_meta_tags %}
+            {% block layout_head_meta_tags_charset %}
+                <meta charset="utf-8">
+            {% endblock %}
+
+            {% block layout_head_meta_tags_viewport %}
+                <meta name="viewport"
+                      content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            {% endblock %}
+
+            {% block layout_head_meta_tags_general %}
+                <meta name="author"
+                      content="{% block layout_head_meta_tags_general_author %}{{ metaInformation.author|striptags }}{% endblock %}"/>
+                <meta name="robots"
+                      content="{% block layout_head_meta_tags_robots %}{{ metaInformation.robots }}{% endblock %}"/>
+                <meta name="revisit-after"
+                      content="{% block layout_head_meta_tags_general_revisit %}{{ metaInformation.revisit|striptags }}{% endblock %}"/>
+                <meta name="keywords"
+                      content="{% block layout_head_meta_tags_keywords %}{{ metaKeywords }}{% endblock %}"/>
+                <meta name="description"
+                      content="{% block layout_head_meta_tags_description %}{{ metaDescription }}{% endblock %}"/>
+            {% endblock %}
+
+            {% block layout_head_meta_tags_opengraph %}
+                <meta property="og:type"
+                      content="{% block layout_head_meta_tags_type_og %}website{% endblock %}"/>
+                <meta property="og:site_name"
+                      content="{% block layout_head_meta_tags_sitename_og %}{{ basicConfig.shopName }}{% endblock %}"/>
+                <meta property="og:title"
+                      content="{% block layout_head_meta_tags_title_og %}{{ metaTitle }}{% endblock %}"/>
+                <meta property="og:description"
+                      content="{% block layout_head_meta_tags_description_og %}{{ metaDescription }}{% endblock %}"/>
+                <meta property="og:image"
+                      content="{% block layout_head_meta_tags_image_og %}{{ theme_config('sw-logo-desktop') }}{% endblock %}"/>
+
+                <meta name="twitter:card"
+                      content="{% block layout_head_meta_tags_card_twitter %}summary{% endblock %}"/>
+                <meta name="twitter:site"
+                      content="{% block layout_head_meta_tags_sitename_twitter %}{{ basicConfig.shopName }}{% endblock %}"/>
+                <meta name="twitter:title"
+                      content="{% block layout_head_meta_tags_title_twitter %}{{ metaTitle }}{% endblock %}"/>
+                <meta name="twitter:description"
+                      content="{% block layout_head_meta_tags_description_twitter %}{{ metaDescription }}{% endblock %}"/>
+                <meta name="twitter:image"
+                      content="{% block layout_head_meta_tags_image_twitter %}{{ theme_config('sw-logo-desktop') }}{% endblock %}"/>
+            {% endblock %}
+
+            {% block layout_head_meta_tags_schema_webpage %}
+                <meta itemprop="copyrightHolder"
+                      content="{% block layout_head_meta_tags_copyright_holder %}{{ basicConfig.shopName }}{% endblock %}"/>
+                <meta itemprop="copyrightYear"
+                      content="{% block layout_head_meta_tags_copyright_year %}{{ metaInformation.copyrightYear|striptags }}{% endblock %}"/>
+                <meta itemprop="isFamilyFriendly"
+                      content="{% block layout_head_meta_tags_family_friendly %}{% if basicConfig.familyFriendly %}true{% else %}false{% endif %}{% endblock %}"/>
+                <meta itemprop="image"
+                      content="{% block layout_head_meta_tags_image_meta %}{{ theme_config('sw-logo-desktop') }}{% endblock %}"/>
+            {% endblock %}
+
+            {% block layout_head_meta_tags_hreflangs %}
+                {% for link in hrefLang %}
+                    <link rel="alternate" hreflang="{{ link.locale }}" href="{{ link.url }}" />
+                {% endfor %}
+            {% endblock %}
+        {% endblock %}
+
+        {% block layout_head_favicon %}
+            <link rel="shortcut icon"
+                  href="{{ theme_config('sw-logo-favicon') }}">
+        {% endblock %}
+
+        {% block layout_head_apple %}
+            <link rel="apple-touch-icon"
+                  sizes="180x180"
+                  href="{{ theme_config('sw-logo-share') }}">
+        {% endblock %}
+
+        {% block layout_head_android %}
+            <link rel="icon"
+                  sizes="192x192"
+                  href="{{ theme_config('sw-logo-share') }}">
+            <meta name="theme-color"
+                  content="{{ theme_config('sw-color-brand-primary') }}"/>
+        {% endblock %}
+
+        {% block layout_head_canonical %}
+            {% if page.metaInformation.canonical %}
+                <link rel="canonical" href="{{ page.metaInformation.canonical }}" />
+            {% endif %}
+        {% endblock %}
+
+        {% block layout_head_title %}
+            <title itemprop="name">
+                {% block layout_head_title_inner %}{% apply spaceless %}
+                    {{ metaTitle }}
+                {% endapply %}{% endblock %}
+            </title>
+        {% endblock %}
+
+        {% block layout_head_stylesheet %}
+            {% if isHMRMode %}
+                {# CSS will be loaded from the JS automatically #}
+            {% else %}
+                {% set assets = theme_config('assets.css') %}
+                {% for file in assets %}
+                    <link rel="stylesheet"
+                      href="{{ asset(file, 'theme') }}">
+                {% endfor %}
+            {% endif %}
+        {% endblock %}
+
+        {% block layout_head_javascript_feature %}
+            {% sw_include "@Storefront/storefront/component/feature.html.twig" %}
+        {% endblock %}
+
+        {# Block for tracking scripts which are required to include in the `head` section of the document #}
+        {% block layout_head_javascript_tracking %}
+            {% sw_include "@Storefront/storefront/component/analytics.html.twig" %}
+        {% endblock %}
+
+        {% if feature('FEATURE_NEXT_12455') %}
+            {% block layout_head_javascript_recaptcha %}
+                {% sw_include "@Storefront/storefront/component/recaptcha.html.twig" %}
+            {% endblock %}
+        {% endif %}
+    </head>
+{% endblock %}
